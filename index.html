@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireless Topology</title>
+    <!-- ======= Styles ====== -->
+    <script src="https://kit.fontawesome.com/d2fd1ef837.js" crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span>
+                            <i id="topicon" class="fa-brands fa-nfc-directional"></i>
+                        </span>
+                        <span class="title">Wireless Topology</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Contact Us</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="title">About</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        
+                    </label>
+                </div>
+
+                <div class="user">
+                    <img src="assets/imgs/customer01.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- ================ Map Container ================= -->
+            <div class="details">
+                <div class="map">
+                    <div class="cardHeader">
+                        <h2>Map</h2>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.929963382238!2d-78.79115838452327!3d43.00080927914905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d373d2261b049f%3A0x2868694d4fc4f56f!2sUniversity%20at%20Buffalo!5e0!3m2!1sen!2sus!4v1669843530056!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- ================= Load/Save Topology ================ -->
+                <div class="topologycon">
+                    
+                    <div class="cardHeader savetopology">
+                        <h2>Load/Save Topology</h2>
+                        <div class="lstopology">
+                            <button type="button" id="btn3" class="button1" data-toggle="modal" data-target="#jsonModal">Feature Tip</button>
+                            <br>
+                            <br>
+                            <input type="file" class="form-control" id="customFile" />
+                            <br>
+                            <button id="btn4" class="button1">Upload JSON File</button>
+                        </div>
+                    </div>
+                    
+                    <br>
+                    <div class="cardHeader jsontopology">
+                        <h2>Import JSON Topology</h2>
+                        <div class="lstopology">
+                            <button type="button" id="btn5" class="button1">Feature Tip</button>
+                            <form class="form-outline">
+                                <input type="text" class="form-control form-control-lg" placeholder=" Enter Topology ID" class="form-control">
+                                <label class="form-label">Enter Topology ID</label>
+                                <button type="button" id="btn6" class="button1">Save Topology</button>
+                                <div class="form-check">
+                                    <div>
+                                        <input class="form-check-input" type="radio" value="option1" name="frm">
+                                        <label class="form-check-label">Public</label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="radio" value="option2" name="frm">
+                                        <label class="form-check-label">Private</label>
+                                    </div>
+                                </div>
+                                <button type="button" id="btn7" class="button1">Load Topology</button>
+                            </form>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+
+        <!-- =========== Button =========  -->
+            <div>
+                <button id="btn1" class="button1">Download</button>
+                <button id="btn2" class="button1">Show existing topology</button>
+            </div>
+            <div class="dropdown">
+                <button class="btn button1 dropdown-toggle" type="button" id="btn8" data-mdb-toggle="dropdown" aria-expanded="false">
+                    Download Node Positions as...
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button">Database (.db)</button></li>
+                  <li><button class="dropdown-item" type="button">Text Document (.txt)</button></li>
+                  <li><button class="dropdown-item" type="button">Comma-Separated Values (.csv)</button></li>
+                </ul>
+              </div>
+
+        <!-- =========== Table =========  -->
+            <div class="details tables">
+                <div class="map">
+                    <div class="cardHeader">
+                        <h2>Table</h2>
+                    </div>
+    
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Name</td>
+                                <td>Name</td>
+                            </tr>
+                        </thead>
+    
+                        <tbody>
+                            <tr>
+                                <td>dfdsfdsf</td>
+                                <td>sdsadas</td>
+                                <td>dsadsadsa</td>
+                            </tr>
+    
+                            <tr>
+                                <td>dfdsfdsf</td>
+                                <td>sdsadas</td>
+                                <td>dsadsadsa</td>
+                            </tr>
+    
+                            <tr>
+                                <td>dfdsfdsf</td>
+                                <td>sdsadas</td>
+                                <td>dsadsadsa</td>
+                            </tr>
+    
+                            <tr>
+                                <td>dfdsfdsf</td>
+                                <td>sdsadas</td>
+                                <td>dsadsadsa</td>
+                            </tr>
+    
+                            <tr>
+                                <td>dfdsfdsf</td>
+                                <td>sdsadas</td>
+                                <td>dsadsadsa</td>
+                            </tr>
+    
+                            <tr>
+                                <td>dfdsfdsf</td>
+                                <td>sdsadas</td>
+                                <td>dsadsadsa</td>
+                            </tr>
+    
+                            <tr>
+                                <td>dfdsfdsf</td>
+                                <td>sdsadas</td>
+                                <td>dsadsadsa</td>
+                            </tr>
+    
+                            <tr>
+                                <td>dfdsfdsf</td>
+                                <td>sdsadas</td>
+                                <td>dsadsadsa</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- ======================================================================================================  -->
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"
+    ></script>
+    <!-- ======================================================================================================  -->
+</body>
+
+</html>
