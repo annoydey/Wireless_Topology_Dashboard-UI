@@ -183,10 +183,22 @@ ul{
   width: 100%;
 } */
 
+.user {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
 .user img {
-  margin-left: 75%;
-  width: 20%;
-  height: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
@@ -209,9 +221,12 @@ ul{
   display: grid;
   min-height: 500px;
   background: var(--white);
-  padding: 40px;
+  padding: 20px;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
+}
+.map1{
+  width: 100%;
 }
 
 .details .cardHeader {
@@ -256,7 +271,7 @@ ul{
 }
 
 .jsontopology{
-  padding-left: 15px;
+  padding-left: 30px;                 /* 2nd time change here*/
   padding-top: 10px;
   height: 345px;
   background: var(--white);
@@ -273,9 +288,9 @@ ul{
 }
 
 .savetopology{
-  padding-left: 15px;
+  padding-left: 40px;
   padding-top: 10px;
-  height: 345px;
+  height: 320px;
   background: var(--white);
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
@@ -363,6 +378,87 @@ ul{
   margin-left: 12%;
 }
 
+
+/* ===================Added style for right side container==========================  */
+/* 2nd time change here*/
+.side-panel-toggle {
+  width: 20px;
+  height: 40px;
+  position: absolute;
+  z-index: 1;
+  background:white;
+  border: none;
+}
+
+.side-panel-toggle{
+  background:var(--white);
+}
+
+.sp-icon-close {
+  display: none !important;
+}
+
+.side-panel {
+  display:none;
+}
+
+.side-panel-open .side-panel {
+  display:block;
+}
+
+.side-panel-open .sp-icon-open {
+  display: none !important;
+}
+
+.side-panel-open .sp-icon-close {
+  display: contents !important;
+}
+.fa-solid{
+  color: #2a2185;
+}
+/*======================================================================================================*/
+
+
+/* ==================Add style for modal===========================  */
+/* 2nd time change here*/
+#modal_header{
+  font-weight:bold;
+  padding-top: 20px;
+  padding-left: 220px;
+}
+
+fieldset {
+  display: none;
+}
+
+fieldset.show {
+  display: block;
+}
+
+.tabs {
+  margin: 2px 5px 0px 5px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.tabs:hover, .tabs.active {
+  border-bottom: 1px solid #2196F3;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #1565C0;
+}
+
+
+.line {
+  background-color: #CFD8DC;
+  height: 1px;
+  width: 100%;
+}
+
+/*======================================================================================================*/
+
 /* ====================== Responsive Design ========================== */
 @media (max-width: 991px) {
   .navigation {
@@ -388,13 +484,16 @@ ul{
   .tables{
     margin-top: 2%;
   }
+  .tabs h6 {
+    font-size: 12px;
+  }
   /* .button1{
     margin-top: 65%;
     margin-left: 9%;
   } */
   #btn1{
     margin-left: 25%;
-    margin-top: 80%;
+    margin-top: 15%;           /* 2nd time change here*/
   }
   #btn2{
     margin-left: 25%;
@@ -406,12 +505,20 @@ ul{
   }
   .details {
     grid-template-columns: 1fr;
+    gap: 0px;
+  }
+  .element.style{
+    gap: 5px;
   }
   .map {
     overflow-x: auto;
   }
   .status.inProgress {
     white-space: nowrap;
+  }
+  /* 2nd time change here*/
+  .details .map{
+    padding: 0px;
   }
 }
 
@@ -444,3 +551,5 @@ ul{
     left: initial;
   }
 }
+
+
