@@ -506,7 +506,7 @@ a:hover {
     padding-left: 55px;
   }
   /* 2nd time changed here */
-  .jsontopology{
+  .savetopology{
     padding-left: 55px;
   }
   /* 2nd time changed here */
@@ -537,7 +537,6 @@ a:hover {
   .details {
     grid-template-columns: 1fr;
     gap: 0px;
-    padding: 5px;
   }
   .element.style{
     gap: 5px;
