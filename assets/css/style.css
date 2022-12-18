@@ -6,7 +6,7 @@
 * {
   font-family: "Ubuntu", sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 0px 6px 0px 0px;
   box-sizing: border-box;
 }
 
@@ -271,7 +271,7 @@ ul{
 }
 
 .jsontopology{
-  padding-left: 30px;                 /* 2nd time change here*/
+  padding-left: 30px;                 /* 2nd time changed here*/
   padding-top: 10px;
   height: 345px;
   background: var(--white);
@@ -380,7 +380,7 @@ ul{
 
 
 /* ===================Added style for right side container==========================  */
-/* 2nd time change here*/
+/* 2nd time changed here*/
 .side-panel-toggle {
   width: 20px;
   height: 40px;
@@ -420,11 +420,15 @@ ul{
 
 
 /* ==================Add style for modal===========================  */
-/* 2nd time change here*/
+/* 2nd time changed here*/
 #modal_header{
   font-weight:bold;
   padding-top: 20px;
   padding-left: 220px;
+}
+/* 2nd time changed here*/
+.modal-footer{
+  padding-right: 30%;
 }
 
 fieldset {
@@ -491,9 +495,23 @@ a:hover {
     margin-top: 65%;
     margin-left: 9%;
   } */
+
+  /* 2nd time changed here*/
+  #Table_name{             
+    padding-top: 5px;
+    padding-left: 8px;
+  }
+  /* 2nd time changed here*/
   #btn1{
     margin-left: 25%;
-    margin-top: 15%;           /* 2nd time change here*/
+    margin-top: 15%;           /* 2nd time changed here*/
+  }
+  /* 2nd time changed here*/
+  .modal-footer{
+    padding-right: 20%;
+  }
+  #modal_header{
+    padding-left: 150px;
   }
   #btn2{
     margin-left: 25%;
@@ -516,7 +534,7 @@ a:hover {
   .status.inProgress {
     white-space: nowrap;
   }
-  /* 2nd time change here*/
+  /* 2nd time changed here*/
   .details .map{
     padding: 0px;
   }

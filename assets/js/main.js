@@ -24,6 +24,8 @@ toggle.onclick = function () {
 
 
 
+/*This one is for right side navigation*/ 
+/* 2nd time changed here*/
 document.querySelector(".side-panel-toggle").addEventListener("click", () => {
   document.querySelector(".topologycon").classList.toggle("side-panel-open");
     const myStyles = `
@@ -34,13 +36,16 @@ document.querySelector(".side-panel-toggle").addEventListener("click", () => {
     element.style.cssText = myStyles;
   
 });
+/*This one is for right side navigation*/ 
+/* 2nd time changed here*/
+window.onload=function(){
+  document.getElementById("left_side_navigation").click();
+};
 
 
 
-
-
-
-
+/*This one is for modal*/ 
+/* 2nd time changed here*/
 $(document).ready(function(){
 
 $(".tabs").click(function(){
