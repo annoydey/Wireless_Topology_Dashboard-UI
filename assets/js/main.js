@@ -34,15 +34,12 @@ document.querySelector(".side-panel-toggle").addEventListener("click", () => {
     `;
     const element = document.querySelector(".details");
     element.style.cssText = myStyles;
-  
 });
 /*This one is for right side navigation*/ 
 /* 2nd time changed here*/
 window.onload=function(){
   document.getElementById("right_side_navigation").click();
 };
-
-
 
 /*This one is for modal*/ 
 /* 2nd time changed here*/

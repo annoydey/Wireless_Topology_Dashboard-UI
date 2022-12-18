@@ -491,11 +491,6 @@ a:hover {
   .tabs h6 {
     font-size: 12px;
   }
-  /* .button1{
-    margin-top: 65%;
-    margin-left: 9%;
-  } */
-
   /* 2nd time changed here*/
   #Table_name{             
     padding-top: 5px;
@@ -510,6 +505,10 @@ a:hover {
   #btn1{
     margin-left: 25%;
     margin-top: 15%;           /* 2nd time changed here*/
+  }
+  /* 2nd time changed here*/
+  .topologycon{
+    padding-right: 20%;
   }
   /* 2nd time changed here*/
   .modal-footer{
@@ -527,12 +526,12 @@ a:hover {
     margin-left: 14%;
   }
   .details {
-    grid-template-columns: 1fr;
-    gap: 0px;
+    grid-template-columns: 1fr auto;
   }
   .element.style{
     gap: 5px;
   }
+  /* 2nd time changed here*/
   .map {
     overflow-x: auto;
   }
@@ -545,7 +544,9 @@ a:hover {
   }
 }
 
+
 @media (max-width: 480px) {
+  
   .cardBox {
     grid-template-columns: repeat(1, 1fr);
   }
